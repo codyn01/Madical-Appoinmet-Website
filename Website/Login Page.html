@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page </title>
+    <link rel="stylesheet" href="Frontpage.css">
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">MediCare</h2>
+                <!-- <a href="#" class="logo"> <i class="fas fa-heartbeat">&nbsp;&nbsp;</i>MediCare </a> -->
+            </div>
+
+            <!-- <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">DOCTOR</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+            </div> -->
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="https://www.medicare.gov/search/medicare?keys="> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Doctor Appoinment & <br><span>Medical Services</span></h1><br>
+            <p class="par">In our Hospital We provide best qualities of services, 24x7 Ambullance Services,
+                <br>best qualities Doctors and nurses 24x7 and Emergency Service. Also we provide Medicine Services 
+                <br> all Doctors are so friendly and they will give you better advice. To know more join with us </p><br>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="" placeholder="Enter Password Here" required>    
+                    <button class="btnn" onclick="storeData()"><a href="Main Page.html" target="_main">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="https://www.skype.com/"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+    <script>
+        function storeData() {
+        const loginData = {
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            // email: document.getElementById('email').value,
+            // address: document.getElementById('address').value,
+            // bloodGroup: document.getElementById('bloodGroup').value,
+            // visitDate: document.getElementById('visitDate').value,
+            // gender: document.getElementById('gender').value,
+            // age: document.getElementById('age').value,
+        };
+    
+          // Convert the object to a JSON string and store it in local storage
+        localStorage.setItem('loginData', JSON.stringify(loginData));
+    
+          // Optionally, you can display a success message or redirect to another page
+        alert('You Login successfully! Click ok For Continue!');
+        }
+    </script>
+
+</body>
+</html>
